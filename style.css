@@ -1,0 +1,238 @@
+@import url('https://fonts.google.com/specimen/Philosopher|Press+Start+2P|Mukta+Vaani');
+:root{
+    --primary-bg-color: #202040;
+    --primary-text-color: #ffffff;
+    --primary-highlight-color: #FFBD69;
+}
+[data-theme="dark"]{
+    --primary-bg-color: #ECF9FF;
+    --primary-text-color: black;
+    --primary-highlight-color: #74573f;
+}
+
+
+body{
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 1fr;
+    /*overflow: hidden;*/
+}
+.linies{
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 110%;
+    padding: -10px;
+}
+
+.herosection{
+    text-align: left;
+    margin: auto;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 100%;
+}
+
+
+.philo{
+    font-family: 'Philosopher';
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+.pressStart{
+    font-family: "Press Start 2P";
+    color: var(--primary-highlight-color);
+    margin-top: -15px;
+    margin-bottom: 3px;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+a:hover{
+    text-decoration:underline;
+    color: var(--primary-highlight-color);
+}
+
+.navsection{
+    font-family: "Press Start 2P";
+    color: var(--primary-text-color);
+    font-size: 30px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.maintext{
+    font-family: "Mukta Vaani";
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    margin-left: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.mein_Bild{
+    margin: auto;
+    margin-right: 250px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.Seitentitel{
+    font-family: "Press Start 2P";
+    color: var(--primary-text-color);
+    font-size: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;    
+}
+
+.notebook{
+    margin: auto;
+    margin-right: -10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+span{
+    color: var(--primary-highlight-color);
+}
+
+.hauptpunkte{
+    font-family: "Mukta Vaani";
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-left: 50px;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 100%;
+}
+
+.nebenpunkte{
+    font-family: "Mukta Vaani";
+    color: var(--primary-highlight-color);
+    text-align: left;
+    margin-left: 180px;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 100%;
+}
+
+.gitlogo{
+    width: 50px;
+    height: 50px;
+}
+
+.logos{
+    margin: auto;
+    margin-right: 350px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  
+    em {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+  }
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+.theme-switch input {
+    display:none;
+  }
+  
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+  
+.theme-switch-wrapper{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    
+}
